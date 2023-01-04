@@ -1,0 +1,288 @@
+
+body{
+    background:#E5E5E5;    
+}
+
+main, body{
+    font-family: 'Inter', sans-serif;
+
+}
+                                      
+#principal{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+
+#logodiv{
+    margin: 20px;
+}
+
+.seccion{
+    margin: 0  auto;
+}
+
+#caja_entrada{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#box_entrada{
+     flex-grow: 1;
+}
+
+#entrada{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    width: 80%;
+    height: 80%;
+    background:#E5E5E5;
+    resize: none;
+    border: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    outline: none;
+    color:#0A3871
+}
+
+::placeholder{
+    
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+}
+
+#nota{
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    height: 18px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #495057;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+}
+
+#nota img{
+    height:16px;
+    width:16px;
+    align-self: center;
+}
+
+#nota p{
+    margin-left: 10px;
+    align-self: center;
+}
+
+#nota:hover{
+    font-weight: bold;
+}
+
+#botones{
+   
+    display: flex;    
+    flex-direction: row;   
+    padding: 24px;    
+    gap: 24px;    
+    width: 680px;   
+    height: 67px;  
+    left: 240px;   
+    top: 1000px;
+}
+
+.boton{
+    font-family: 'Inter', sans-serif;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight:800;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #63a6f7;
+    justify-content: center;
+}
+
+#encriptar{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+#desencriptar{
+    background:#D8DFE8 ;
+    color: #0A3871; 
+}
+
+#caja_salida{
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#resultado{
+    text-align: center;
+    width: 336px;
+    height: auto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    word-wrap: break-word;
+    display: none;
+    padding: 5px;
+}
+
+#imagen{
+    display: flex;
+    width: 336px;
+    height: 304px;   
+}
+
+.lineas{
+    margin: 0 20px;
+}
+
+#linea1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+#linea2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+    /* Gray/gray-400 */
+    color: #495057;   
+}
+
+#caja_salida #bocopiar{
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 84%;
+}
+
+.boton:hover{
+    font-size: 18px;
+    border-width:2px;  
+}
+
+#copiar{
+    color: #0A3871;
+    background: white;
+    width: 328px;
+    display: none;
+    gap: 15px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#piedepag{
+    justify-content: center;
+}
+
+
+@media screen and (max-width:480px){
+
+html,body, #principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    
+}
+
+.seccion{
+    margin: auto;
+    width: 100%;
+}
+
+#logodiv{
+    margin: 0;
+    margin-left: 25px;
+    }
+
+#logo{
+    padding-top: 30px;
+    width: 15%;
+    height: 40%;
+    
+}
+
+#caja_entrada{
+    height: 60%;
+    margin: auto;
+    justify-content: center;
+}
+
+#box_entrada{
+    display: flex;
+    align-self: center;
+    height: 80%;
+}
+
+#entrada{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+#botones, #nota, .boton{
+    width: auto;
+    justify-content: center;
+    margin: 0;
+    }
+
+
+#caja_salida{
+    width: 95%;
+ }
+
+#resultado{
+    position: relative;
+}
+
+#divimagen{
+    
+    width: 100%;   
+    height: auto;
+}
+
+#imagen{
+    top: 10px;
+    width: 40%;
+    height: 80%;
+    margin: 10px auto;
+}
+
+.lineas{
+    width: auto;
+}
+
+#copiar{
+    align-content: center;
+    margin-bottom: 25px;
+    height: auto;
+}
+
+#piedepag{
+    margin: 10px;
+}
+
+}
