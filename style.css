@@ -81,6 +81,7 @@ main, body{
 
 #nota:hover{
     font-weight: bold;
+    width: auto;
 }
 
 #botones{
@@ -194,7 +195,9 @@ main, body{
 }
 
 #piedepag{
+    display: flex;
     justify-content: center;
+    
 }
 
 
@@ -204,7 +207,7 @@ html,body, #principal{
     display: flex;
     width: 100%;
     flex-direction: column;
-    
+    margin: auto;
     
 }
 
